@@ -41,6 +41,7 @@ void botao_callback(uint gpio, uint32_t events) {
         // Inicia a sequência de apagamento dos LEDs
         estado_leds = 1;
         add_alarm_in_ms(3000, turn_off_callback, NULL, false);
+
     }
 }
 
